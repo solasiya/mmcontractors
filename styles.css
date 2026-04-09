@@ -1,0 +1,22 @@
+.hero-gradient {
+    background: linear-gradient(160deg, rgba(20, 30, 25, 0.9) 0%, rgba(30, 45, 35, 0.8) 60%, rgba(40, 60, 45, 0.7) 100%);
+}
+.stat-counter {
+    font-variant-numeric: tabular-nums;
+}
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #4a9b6b;
+    transition: width 0.25s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
