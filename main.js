@@ -30,7 +30,7 @@ const successModal = document.getElementById('success-modal');
 if (contactForm && successModal) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Sending...';
@@ -46,7 +46,7 @@ if (contactForm && successModal) {
         }
 
         // Send form using EmailJS
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', contactForm)
+        emailjs.sendForm('service_h7n1z3p', 'template_zxan4an', contactForm)
             .then(() => {
                 successModal.classList.remove('hidden');
                 successModal.classList.add('flex');
